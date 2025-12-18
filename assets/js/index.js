@@ -1,5 +1,8 @@
 // ^ Write your JavaScript code here
 var rootHTMLTag = document.documentElement;
+var mainContent = document.getElementById('main-content');
+var navHeader = document.getElementById('header');
+
 /**/
 /*========================================DOM Elements======================================================*/
 /*1- Light & Dark Model */
@@ -310,6 +313,12 @@ resetSettingsBtn.addEventListener('click', function (e) {
     closeSidebar();
 });
 
+mainContent.addEventListener('click', function (e) {
+    closeSidebar();
+});
+navHeader.addEventListener('click', function (e) {
+    closeSidebar();
+});
 //--------------------------------------------------------
 
 //6. Scroll To the top
